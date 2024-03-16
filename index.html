@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile</title>
+    <!-- Agregar enlaces a Bootstrap y jQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav class="navbar navbar-expand-lg navbar-light fondo-header">
+            <div class="container p-4">
+                <img src="img/Smile logo 2.png" style="width: 15%;" href="Inicio" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="background-color: #EEE9DA;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto separa-menu ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bienvenidos">
+                                <H5 class="btn-inicio">INICIO</H5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Comic">
+                                <H5 class="btn-inicio">COMIC</H5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Creadores">
+                                <H5 class="btn-inicio">CREADORES</H5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Personajes">
+                                <H5 class="btn-inicio">PERSONAJES</H5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">
+                                <H5 class="btn-inicio">CONTACTO</H5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index2.html">
+                                <H5 class="btn-inicio">TIENDA</H5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="contenedor-textos" id="bienvenidos">
+            <div class="texto-bienvenida shadow">
+                <h1 class="bienvenidos text-center titulo">Bienvenidos a Smile</h1>
+                <h5 class="introduccion text-center">En un mundo donde las emociones pueden ser un laberinto complejo y
+                    desafiante, nos encontramos con la necesidad urgente de comprender y apoyar a aquellos que luchan
+                    con la depresión. Este no es solo un cómic, es una herramienta interactiva diseñada con el propósito
+                    de iluminar la oscuridad que rodea a la depresión, brindando no solo conocimiento, sino también
+                    comprensión y apoyo.</h5>
+
+                <div>
+                    <button type="button" class="btn1 shadow mb-5 rounded mx-auto d-flex mt-5"><i
+                            class="bi bi-play-fill">comic</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" class="Incio">
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <div class="col-sm-12 col-xl-6 text-center img-personajes">
+                <img src="./video/animacion.gif" alt="GIF animado" class="img-fluid" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="shadow p-3 mb-5 col-sm-12 col-xl-6 text-center"
+                style=" background-color: #93bfcfce; border-radius: 80px; height: 300px; align-items: center; justify-content: center; display: block;">
+
+                <h1 class="titulo-Smile mt-4">Smile</h1>
+                <h5 class="my-5 text-center">A pesar que en la sociedad no le dan la importancia que se necesita a las
+                    personas con depresión nace smile para concientizar e informar a las personas sobre la depresión,
+                    sus causas y la
+                    importancia que tiene esta en toda la población.
+                </h5>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="mt-5" style="background-color: #ca8c4958;">
+        <div class="container">
+            <h1 class="text-center pt-5 titulo" style="color: #000000;">Comic</h1>
+            <div class="container mt-5" id="Comic">
+                <div class="row">
+                    <div id="ventanaEmergente" class="ventana-emergente" style="background-color: #6096B4;">
+                        <!-- Aquí se mostrarán las imágenes -->
+                    </div>
+
+                    <div class="col-sm-10 col-xl-8  d-flex justify-content-center align-items-center cajauno">
+                        <img id="Change" src="./img/galeria1.jpg" alt="" class="img-fluid lagaleria">
+                    </div>
+
+                    <div class="col-sm-10 col-xl-4 p-4">
+                        <div
+                            class="imagenes-galeria1 d-flex flex-column align-items-center justify-content-center cajados p-3">
+                            <img src="./img/galeria2.jpg" alt="" class="imagenes-galeria" onclick="cambio()">
+                            <img src="./img/galeria3.jpg" alt="" class="imagenes-galeria" onclick="cambio2()">
+                            <img src="./img/galeria1.jpg" alt="" class="imagenes-galeria" onclick="cambio3()">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="shadow p-1 mb-5 rounded mt-5 fondo-shadow">
+                            <h2 class="text-center p-1 titulo " style="color: #000;">Sinopsis</h2>
+                            <p class="text-center mt-2">Andres fue un chico que tuvo un pasado un poco difícil ya que
+                                sufría de
+                                bullying
+                                muy fuerte en el colegio eso le <br>
+                                afectaba psicológicamente y en el transcurso de su crecimiento conoció a una persona
+                                experimentada
+                                que
+                                lo <br>
+                                ayudo demasiado para que Andres mejorara en el aspecto mental y en la vida y Andres al
+                                ver a sus
+                                allegados mal <br>
+                                y al borde de la depresión decide aconsejarlos y ayudarlos para que no se sientansolos y
+                                aunque
+                                sabe
+                                que
+                                no les <br>
+                                soluciona sus problemas por completotrata de hacerlos sentir mejor.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C135.15,-20.22 394.19,178.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffffff;"></path>
+            </svg></div>
+    </section>
+
+    <section>
+        <div class="container" style="padding: 190px;" id="Personajes">
+            <div class="row" style="margin-top: -15%;">
+                <h1 class="titulo text-center pt-5 titulo-personajes" style="color: #6096B4;">Personajes</h1>
+                <div class="col-lg-12 col-sm-10">
+                    <div class="accordion pt-5" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordionCabeza" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="./img/caraLio.png" alt="" style="width: 20%;">
+                                    <h1 class="titulo">Lio</h1>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body accordionCuerpo1" style="background-image: url(./img/accordionfondo1.jpg);">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-center">
+                                            <img class="personajeLio" src="./img/Lio.png" alt="" style="width: 40%;">
+                                        </div>
+                                        <div class="col pt-5">
+                                            <h1 class="titulo">Lio</h1>
+                                            <h5>Lio es chico muy tranquilo que tuvo depresión por causas del bullying y
+                                                lo
+                                                supera con el tiempo y se vuelve tranquilo y frio pero le gusta ayudar a
+                                                los
+                                                demas que se sienten mal</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordionCabeza" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <img src="./img/caraAlejo.png" alt="" style="width: 20%;">
+                                    <h1 class="titulo">Alejo</h1>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body accordionCuerpo2">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-center">
+                                            <img class="personajeAlejo" src="./img/Alejo.png" alt=""
+                                                style="width: 40%;">
+                                        </div>
+                                        <div class="col pt-5">
+                                            <h1 class="titulo">Alejo</h1>
+                                            <h5>Alejo es tranquilo pero con un pasado bastante duro gracias a al
+                                                bullying y
+                                                la depresión que tuvo que lidiar</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed accordionCabeza" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <img src="./img/caraBrayan.png" alt="" style="width: 20%;">
+                                    <h1 class="titulo">Brayan</h1>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body accordionCuerpo3">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-center">
+                                            <img class="personajeBrayan" src="./img/Brayan.png" alt=""
+                                                style="width: 40%;">
+                                        </div>
+                                        <div class="col pt-5">
+                                            <h1 class="titulo">Brayan</h1>
+                                            <h5>Brayan molesta a las demás personas por asuntos y problemas con la
+                                                familia
+                                                así que reprime lo que siente en odio hacia las demás personas y no sabe
+                                                el
+                                                cómo expresarlo</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separa">
+        <div class="separador d-flex justify-content-center">
+            <img class="img-fluid" src="./img/separador.png">
+        </div>
+
+    </div>
+
+    <section class="Creadores" style="background-color: #ffffff; margin-top: 8%;">
+        <div class="container d-flex justify-content-center shadow rounded" id="Creadores"
+            style="background-color: #93BFCF;">
+            <div class="row">
+                <h1 class="text-center p-5 titulo" style="color: #EDE9DA">Creadores</h1>
+                <div class="col-sm-12 col-xl-6 d-flex justify-content-center mb-5">
+
+                    <div class="card" style="width: 15rem; background-color: #93BFCF; border: none;">
+                        <img src="./img/Kevi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-color: #93BFCF;">
+                            <h1 class="card-title text-center">Kevin </h1>
+                        </div>
+                        <button type="button" class="btn3"
+                            onclick="descripción('Kevin','Instagram kevin_ruiz_740, lider de equipo y diseñador')">
+                            Saber mas
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xl-6 d-flex justify-content-center mb-5">
+                    <div class="card" style="width: 15rem; background-color: #93BFCF; border: none;">
+                        <img src="./img/Peludo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body border-none" style="background-color: #93BFCF;">
+                            <h1 class="card-title text-center">Deibyd</h1>
+                        </div>
+                        <button type="button" class="btn3"
+                            onclick="descripción('Deibyd', 'Instagram deibyd posada, programador')">
+                            Saber mas
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="alertacaja" class="Caja">
+                <div class="terr">
+                    <h1 id="Nombrealerta" class="name"></h1>
+                    <p id="alertainfo" class="info"></p>
+                    <br>
+                    <button class="boton" onclick="cerrar()">Cerrar</button>
+                </div>
+            </div>
+    </section>
+
+    <div style="height: 150px; overflow: hidden; margin-top: 8%;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C135.15,-20.22 394.19,178.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #93BFCF;"></path>
+        </svg></div>
+    <section class="footer" style="background-color: #93BFCF;">
+        <footer class="text-light text-center py-2" id="Contacto">
+    </section>
+
+    <!-- Footer -->
+    <!--<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C135.15,-20.22 394.19,178.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #93BFCF;"></path></svg></div>-->
+    <section class="footer" style="background-color: #93BFCF;">
+        <footer class="text-light text-center py-1" id="Contacto">
+            <h1 class="text-center titulo" style="color: #EDE9DA">CONTACTO</h1>
+            <p>&copy; 2024 Comic Interactivo</p>
+            <div>
+                <i class="bi bi-facebook h-100">Smile</i>
+                <i class="bi bi-instagram h-100 ms-5">@Smile</i>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./js/java.js"></script>
+</body>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style3.css">
+    <!-- Estilos personalizados -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #77a9bb85;">
+        <div class="container-fluid">
+            <img src="img/Smile logo 2.png" style="width: 10%;" href="Inicio" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="background-color: #EEE9DA;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarNav">
+                <ul class="navbar-nav ms-auto separaUsuario">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <h4 class="btn-inicio">Smile</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">
+                            <h4 class="btn-inicio">Cerrar</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="center-container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="login-form">
+                    <h2 class="mb-4">Inicio de sesión</h2>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico"
+                            required>
+                        <label for="inputEmail">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña"
+                            required>
+                        <label for="inputPassword">Contraseña</label>
+                    </div>
+                    <button class="btn1  submit-btn" type="submit">Iniciar sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional si no necesitas funcionalidades específicas de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
